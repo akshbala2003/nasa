@@ -32,7 +32,7 @@ const Details = () => {
   });
 
   return (
-    <div className="details-container">
+    <div className="details-container flex gap-8 flex-col">
       <h1>{item.data[0]?.title}</h1>
 
       {isLoading && <p>Loading image...</p>}
@@ -45,7 +45,7 @@ const Details = () => {
         />
       )}
 
-      <p>{item.data[0]?.description}</p>
+      <p>{`${item.data[0]?.description}`}</p>
       <p>Date Created: {item.data[0]?.date_created}</p>
     </div>
   );

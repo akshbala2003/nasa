@@ -1,141 +1,137 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #1c1c2b, #0d0d1f); 
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .container {
-    padding: 2rem;
-    max-width: 800px; 
-    width: 100%;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 2rem; 
-    margin-bottom: 1.5rem;
-    color: #6cdbeb;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column; 
-    background: #2b2d42;
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    margin-bottom: 1.5rem; 
-    align-items: center; 
-  }
-  
-  .date-picker-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem; 
-    color: #dcdde1;
-    align-items: center; 
-  }
-  
-  .date-picker {
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    background: #20202a;
-    color: #fff;
-    border: none;
-    outline: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .date-picker:hover, .date-picker:focus {
-    box-shadow: 0 4px 15px rgba(108, 219, 235, 0.7);
-  }
-  
-  button[type="submit"] {
-    padding: 0.5rem 1rem; 
-    background: #6cdbeb;
-    border: none;
-    border-radius: 8px; 
-    font-size: 1rem; 
-    color: #0d0d1f;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    box-shadow: 0 5px 10px rgba(108, 219, 235, 0.4);
-    margin-top: 1rem; 
-  }
-  
-  button[type="submit"]:hover {
-    background: #48b3bf;
-  }
-  
-  button {
-    padding: 0.5rem 1rem; 
-    border: none;
-    border-radius: 10px;
-    margin: 0 10px;
-    cursor: pointer;
-    background: #6cdbeb;
-    color: #0d0d1f;
-    transition: background 0.3s ease;
-    box-shadow: 0 5px 10px rgba(108, 219, 235, 0.4);
-  }
-  
-  button:hover {
-    background: #48b3bf;
-  }
-  
-  button:disabled {
-    background: #4f4f5f;
-    cursor: not-allowed;
-  }
-  
-  .asteroid-card {
-    background: #303245;
-    border-radius: 20px;
-    padding: 1.5rem;
-    margin-bottom: 1rem; 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-  }
-  
-  .asteroid-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .asteroid-card strong {
-    color: #6cdbeb;
-  }
-  
-  .asteroid-card p {
-    margin: 0.5rem 0;
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    color: #fff;
-  }
-  
-  .pagination span {
-    font-size: 1.1rem;
-  }
-  
-  label {
-    font-size: 1rem;
-    color: #dcdde1;
-    margin-bottom: 0.5rem;
-  }
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #1c1c2b, #0d0d1f);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
+.container {
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+}
 
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #6cdbeb;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
 
-  
-  
+form {
+  display: flex;
+  flex-direction: column;
+  background: #2b2d42;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.date-picker-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #dcdde1;
+  align-items: center;
+}
+
+.date-picker {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: #20202a;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.date-picker:hover,
+.date-picker:focus {
+  box-shadow: 0 4px 15px rgba(108, 219, 235, 0.7);
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background: #6cdbeb;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #0d0d1f;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 5px 10px rgba(108, 219, 235, 0.4);
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background: #48b3bf;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  background: #6cdbeb;
+  color: #0d0d1f;
+  transition: background 0.3s ease;
+  box-shadow: 0 5px 10px rgba(108, 219, 235, 0.4);
+}
+
+button:hover {
+  background: #48b3bf;
+}
+
+button:disabled {
+  background: #4f4f5f;
+  cursor: not-allowed;
+}
+
+.asteroid-card {
+  background: #303245;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.asteroid-card:hover {
+  transform: translateY(-5px);
+}
+
+.asteroid-card strong {
+  color: #6cdbeb;
+}
+
+.asteroid-card p {
+  margin: 0.5rem 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.pagination span {
+  font-size: 1.1rem;
+}
+
+label {
+  font-size: 1rem;
+  color: #dcdde1;
+  margin-bottom: 0.5rem;
+}

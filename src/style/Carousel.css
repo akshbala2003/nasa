@@ -1,4 +1,3 @@
-
 .app-container {
   display: flex;
   justify-content: space-between;
@@ -7,51 +6,48 @@
   min-height: 100vh;
   color: #ffffff;
 }
- 
 
 .carousel-section {
   width: 70%;
   padding-right: 20px;
 }
- 
+
 .carousel-root {
   background-color: #14141e;
   border-radius: 10px;
   padding: 20px;
 }
- 
+
 .carousel-item {
   display: flex;
   justify-content: center;
 }
- 
+
 .carousel .carousel-image {
   border-radius: 10px;
   max-width: 100%;
   height: auto;
 }
- 
 
 .carousel .thumbs-wrapper {
   margin-top: 10px;
 }
- 
+
 .carousel .thumbs .thumb {
   border-radius: 5px;
   border: 2px solid transparent;
 }
- 
+
 .carousel .thumbs .thumb.selected {
-  border-color: #4CAF50;
+  border-color: #4caf50;
 }
- 
+
 .carousel .control-arrow {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   color: #ffffff;
   padding: 10px;
 }
- 
 
 .metadata-section {
   width: 35%;
@@ -61,7 +57,7 @@
   display: flex;
   flex-direction: column;
 }
- 
+
 .metadata-title {
   font-size: 1.6rem;
   font-weight: bold;
@@ -70,17 +66,17 @@
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
- 
+
 .metadata-info p {
   font-size: 1.1rem;
   line-height: 1.6;
 }
- 
+
 .metadata-info span {
   font-weight: bold;
   color: #00bfff;
 }
- 
+
 .metadata-subtitle {
   margin-top: 30px;
   font-size: 1.4rem;
@@ -88,17 +84,15 @@
   border-bottom: 1px solid #444;
   padding-bottom: 10px;
 }
- 
+
 .metadata-events {
   list-style-type: none;
   padding: 0;
   margin-top: 20px;
 }
- 
+
 .metadata-events li {
   font-size: 1.1rem;
   line-height: 1.6;
   padding: 5px 0;
 }
-
-
