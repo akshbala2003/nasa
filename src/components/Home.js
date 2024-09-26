@@ -31,12 +31,6 @@ const Home = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  const prevImage = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
-  };
-
   useEffect(() => {
     const interval = setInterval(nextImage, 4000);
     return () => clearInterval(interval);
@@ -44,8 +38,12 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="carousel-container">
-        {isLoading && <p>Loading...</p>}
+      <div className="carousel-container relative">
+        {isLoading && (
+          <div className="flex justify-center items-center h-64">
+            <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+          </div>
+        )}
         {error && <p>Error fetching images: {error.message}</p>}
         {images.length > 0 && (
           <div className="carousel-slide">
@@ -56,12 +54,6 @@ const Home = () => {
             />
           </div>
         )}
-        <button className="prev" onClick={prevImage}>
-          &#10094;
-        </button>
-        <button className="next" onClick={nextImage}>
-          &#10095;
-        </button>
       </div>
 
       <section className="description">
