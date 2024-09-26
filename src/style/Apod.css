@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #000428, #004e92); 
+  min-height: 100vh;
+  color: white;
+}
+
+.apod-content {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4); 
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.apod-content:hover {
+  transform: scale(1.02); 
+}
+
+.apod-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); 
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #76e7ff;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffdd40;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.05); 
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.apod-date {
+  font-style: italic;
+  color: #d3d3d3;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
