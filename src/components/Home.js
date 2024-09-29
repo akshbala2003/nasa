@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
+
+import React, { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import "../style/Home.css";
 
@@ -37,11 +38,11 @@ const Home = () => {
   }, [images.length]);
 
   return (
-    <div className="home">
+    <div className="home text-white">
       <div className="carousel-container relative">
         {isLoading && (
           <div className="flex justify-center items-center h-64">
-            <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+            <div className="animate-spin "></div>
           </div>
         )}
         {error && <p>Error fetching images: {error.message}</p>}
@@ -50,15 +51,17 @@ const Home = () => {
             <img
               src={images[currentIndex]}
               alt={`NASA Space ${currentIndex}`}
-              className="carousel-image"
+              className="carousel-image max-w-full h-96 object-cover"
             />
           </div>
         )}
       </div>
 
-      <section className="description">
-        <h1>Welcome to NASA Image Gallery</h1>
-        <p>
+      <section className="description mt-8 p-4">
+        <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 animate-pulse">
+          Welcome to NASA Image Gallery
+        </h1>
+        <p className="mt-4 text-lg leading-relaxed">
           Explore breathtaking images of the cosmos, planets, stars, and more.
           The gallery features images captured by NASA’s spacecraft, telescopes,
           and astronauts. Dive into the wonders of the universe with NASA’s most

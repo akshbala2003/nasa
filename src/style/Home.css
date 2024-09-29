@@ -1,6 +1,5 @@
 .home {
   text-align: center;
-  /* width: 100%; */
   background-color: black;
   color: white;
   padding: 20px;
@@ -8,7 +7,7 @@
 
 .carousel-container {
   position: relative;
-  max-width: 100%;
+  max-width: 60%;
   margin: 0 auto;
   overflow: hidden;
   border: 1px solid white;

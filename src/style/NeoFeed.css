@@ -5,12 +5,14 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  
+
   min-height: 100vh;
 }
 
 .container {
+  align-items: center;
   padding: 2rem;
   max-width: 800px;
   width: 100%;
