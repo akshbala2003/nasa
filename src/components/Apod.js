@@ -27,9 +27,7 @@ const Apod = () => {
         <p className="text-lg animate-pulse text-gray-400">Loading...</p>
       )}
       {error && (
-        <p className="text-lg text-red-500">
-          Error: {error.message}
-        </p>
+        <p className="text-lg text-red-500">Error:{error.message}</p>
       )}
 
       {apod && (
